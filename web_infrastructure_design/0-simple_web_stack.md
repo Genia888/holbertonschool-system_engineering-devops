@@ -29,44 +29,44 @@ The domain name (foobar.com) provides a human-readable address that translates t
 The "www" in www.foobar.com is a CNAME record (Canonical Name record) that points to the domain foobar.com, which then resolves to the IP address 8.8.8.8 through an A record.
 
 ### Role of the web server (Nginx)
-Receives HTTP/HTTPS requests from users
+- Receives HTTP/HTTPS requests from users
 
-Serves static content (HTML, CSS, JavaScript, images)
+- Serves static content (HTML, CSS, JavaScript, images)
 
-Acts as a reverse proxy to forward dynamic requests to the application server
+- Acts as a reverse proxy to forward dynamic requests to the application server
 
-Handles SSL/TLS termination
+- Handles SSL/TLS termination
 
-Manages load balancing (in more complex setups)
+- Manages load balancing (in more complex setups)
 
 ### Role of the application server
-Executes the application logic and business rules
+- Executes the application logic and business rules
 
-Processes dynamic content generation
+- Processes dynamic content generation
 
-Handles user authentication and session management
+- Handles user authentication and session management
 
-Communicates with the database to retrieve/store data
+- Communicates with the database to retrieve/store data
 
-Renders templates to generate HTML responses
+- Renders templates to generate HTML responses
 
 ### Role of the database (MySQL)
-Stores and manages persistent data (user accounts, content, settings)
+- Stores and manages persistent data (user accounts, content, settings)
 
-Provides data integrity and security
+- Provides data integrity and security
 
-Handles data relationships through tables
+- Handles data relationships through tables
 
-Optimizes queries for efficient data retrieval
+- Optimizes queries for efficient data retrieval
 
 ### Server communication with user's computer
 The server communicates with the user's computer using the HTTP/HTTPS protocol over TCP/IP. This includes:
 
-HTTP requests (GET, POST, etc.) from the user's browser
+- HTTP requests (GET, POST, etc.) from the user's browser
 
-HTTP responses containing HTML, CSS, JavaScript, and other resources
+- HTTP responses containing HTML, CSS, JavaScript, and other resources
 
-TCP/IP for reliable data transmission
+- TCP/IP for reliable data transmission
 
 ### Issues with This Infrastructure
 ### 1. Single Point of Failure (SPOF)
